@@ -32,15 +32,20 @@
     <script type="application/javascript" src="vendor/jquery-1.11.2.js"></script>
     <script type="application/javascript" src="vendor/underscore.js"></script>
     <script type="application/javascript" src="lib/hitbox.js"></script>
+    <script type="application/javascript" src="lib/shooter.js"></script>
+    <script type="application/javascript" src="lib/bullet.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+    <script type="application/javascript" src="lib/gameView.js"></script>
+
     <script type="application/javascript">
       (function () {
-        var canvasEl = $("canvas");
-        // canvasEl.width = Centipede.Game.DIM_X;
-        // canvasEl.height = Centipede.Game.DIM_Y;
-// 
-        // var ctx = canvasEl.getContext("2d");
-        // var game = new Centipede.Game();
-        // new Centipede.GameView(game, ctx).start();
+        var canvasEl = $("canvas")[0];
+        canvasEl.width = Centipede.Game.DIM_X;
+        canvasEl.height = Centipede.Game.DIM_Y;
+
+        var ctx = canvasEl.getContext("2d");
+        var game = new Centipede.Game();
+        new Centipede.GameView(game, ctx).start();
       })();
     </script>
 </body>
