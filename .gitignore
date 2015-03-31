@@ -1,1 +1,4 @@
 *.project
+todos.*
+*.DS_Store
+__MACOSX/
