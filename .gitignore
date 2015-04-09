@@ -2,3 +2,4 @@
 todos.*
 *.DS_Store
 __MACOSX/
+.metadata/
