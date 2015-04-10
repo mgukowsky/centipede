@@ -3,3 +3,5 @@ todos.*
 *.DS_Store
 __MACOSX/
 .metadata/
+originals/
+redos/

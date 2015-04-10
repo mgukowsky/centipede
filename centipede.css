@@ -1,16 +1,23 @@
+div.content{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 750px;
+  margin: 20px 0;
+  position: absolute;
+  left: 50px;
+}
+
+body {
+  background-color: #ccc;
+  font-family: 'Francois One', sans-serif;
+}
+
 canvas {
   border: 1px solid #000;
   display: block;
   margin: auto;
 }
-
-/*.vertical-wall {
-  cursor: url(assets/vertical_cursor.gif) 10 20, auto;
-}
-
-.horizontal-wall {
-  cursor: url(assets/horizontal_cursor.gif) 20 10, auto;
-}*/
 
 h1 {
   font-size: 50px;
@@ -25,22 +32,6 @@ p {
   border-bottom: 2px solid blue;
   padding: 10px 0;
   text-align: center;
-}
-
-div.content{
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  width: 750px;
-  margin: auto;
-  position: absolute;
-  left: 400px;
-  top: 50px;
-}
-
-body {
-  background-color: #ccc;
-  font-family: 'Francois One', sans-serif;
 }
 
 label {
@@ -78,12 +69,23 @@ label.level {
   text-align: right;
 }
 
-label.cleared {
+label.how-to-play-link {
   background-color: black;
   top: 200px;
   right: 230px;
-  text-align: right;
+  text-align: center;
   font-size: 18px;
+  height: 75px;
+}
+
+label.how-to-play-link > a {
+	color: #CC0;
+	text-decoration: none;
+}
+
+label.how-to-play-link > a:hover {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 button {
