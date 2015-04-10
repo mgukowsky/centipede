@@ -8,16 +8,25 @@
 </head>
 <body>
 	<div class="content">
+		<label class="options">
+  	<section id="transition-radios">
+    	Effects
+    	<form>
+    		<input type="radio" name="transition" id="transitions-on" checked>ON<br>
+    		<input type="radio" name="transition" id="transitions-off">OFF
+    	</form>
+    </section>
+  </label>
     <h1>Centipede!</h1>
-    <label class="score">
+    <label id="score" class="score">
       Score
       <section class="score"></section>
     </label>
-    <label class="lives">
+    <label id="lives" class="lives">
       Lives
       <section class="lives"></section>
     </label>
-    <label class="level">
+    <label id="level" class="level">
       Level
       <section class="level"></section>
     </label>
@@ -46,6 +55,7 @@
 
     <script type="text/javascript">
       (function () {
+      	window.options = {runTransitions: true};
       	window.frameRateMod = 2; //default to 60 fps
         var canvasEl = $("canvas")[0];
         canvasEl.width = Centipede.Game.DIM_X;
@@ -53,7 +63,6 @@
 
         var ctx = canvasEl.getContext("2d");
         var game = new Centipede.Game();
-        //TODO: Add a GUI to change this setting.
         new Centipede.GameView(game, ctx).start();
       })();
     </script>

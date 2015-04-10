@@ -6,6 +6,7 @@ div.content{
   margin: 20px 0;
   position: absolute;
   left: 50px;
+  transition: all 500ms
 }
 
 body {
@@ -50,15 +51,24 @@ label {
 }
 
 label.score {
+	z-index: 10;
   background-color: green;
   top: 100px;
   left: 19px;
+}
+
+#score {
+	transition: all 100ms;
 }
 
 label.lives {
   background-color: red;
   top: 200px;
   left: 150px;
+}
+
+#lives {
+	transition: all 500ms;
 }
 
 label.level {
@@ -76,6 +86,18 @@ label.how-to-play-link {
   text-align: center;
   font-size: 18px;
   height: 75px;
+}
+
+label.options {
+	position: absolute;
+	z-index: 100;
+	float: right;
+	color: #000;
+	background-color: #FFF;
+	top: 520px;
+	right: 0px;
+	height: 75px;
+	text-align: left;
 }
 
 label.how-to-play-link > a {
