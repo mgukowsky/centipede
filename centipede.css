@@ -110,6 +110,18 @@ label.how-to-play-link > a:hover {
 	text-decoration: underline;
 }
 
+#score-flash {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 800px;
+	top: 320px;
+	color: #FF0000;
+	font-size: 20px;
+	opacity: 0;
+	transition: top 500ms, opacity 500ms;
+}
+
 button {
   display: block;
   width: 200px;
