@@ -7,6 +7,17 @@
   <link rel="stylesheet" type="text/css" href="centipede.css">
 </head>
 <body>
+	<object class='modal-screen off'></object>
+	<section id="item-info">
+		<object id="click-here-left" class="info">
+			<p class="caption">CLICK HERE<p>
+			<img src="assets/right_arrow.gif">
+		</object>
+		<object  id="click-here-right" class="info">
+			<p class="caption">CLICK HERE<p>
+			<img src="assets/left_arrow.gif">
+		</object>
+	</section>
 	<div class="content">
 		<label class="options">
   	<section id="transition-radios">
@@ -17,7 +28,7 @@
     	</form>
     </section>
   </label>
-    <h1>Centipede!</h1>
+    <h1>Centipede... IN SPACE!</h1>
     <label id="score" class="score">
       Score
       <section class="score"></section>
@@ -36,7 +47,37 @@
     <section id="score-flash"></section>
     <button class="pause clicked">Click to START</button>
     <canvas id="centipede"></canvas>
-    <p>Written by Matt Gukowsky | View on <a href="http://github.com/mgukowsky/centipede">GitHub</a></p>
+    <p class="footer">Written by Matt Gukowsky | View on <a href="http://github.com/mgukowsky/centipede">GitHub</a></p>
+  	<section class="how-to-play-info">
+  		<button class="close-dialog">X close</button>
+  		<ul>
+  			<li>Press SPACE to shoot</li>
+  			<li>Use the ARROW KEYS to move</li>
+  			<li><img src="assets/centipede_body.gif"> <img src="assets/centipede_head.gif"> 
+  				are your targets; eliminate all to clear the level</li>
+  			<li>Destroy them before they get to you!</li>
+  			<li><img src="assets/centipede_head.gif"> are worth more points</li>
+  			<li>You will get more points as the game level increases</li>
+  			<li><img src="assets/full_mushroom.gif"> take four hits to destroy, but 
+  				can block enemy paths</li>
+  			<li><img src="assets/spider.gif"> eat <img src="assets/full_mushroom.gif">, 
+  				but can destroy you; worth a LOT of points!</li>
+  			<li><img src="assets/flea.gif"> create more <img src="assets/full_mushroom.gif">,
+  				but can destroy you; worth a LOT of points!</li>  		
+  		</ul>
+  		<h2>TROUBLESHOOTING</h2>
+			<ul>
+				<li>Q: The game is really slow...</li>
+				<li>A: Try turning "Effects" off, in the options box on the lower right of 
+					the page</li>
+				<br>
+				<li>Q: The controls are not responsive...</li>
+				<li>A: Try reloading the page, or try opening the page in Chrome or Firefox</li>
+				<br>
+				<li>Q: You haven't answered my question!</li>
+				<li>A: Send an email to mgukowsky@gmail.com and I'll do my best :)</li>
+			</ul>
+  	</section>
   </div>
     <script type="text/javascript" src="vendor/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="vendor/underscore-min.js"></script>
