@@ -20,14 +20,22 @@
 	</section>
 	<div class="content">
 		<label class="options">
-  	<section id="transition-radios">
-    	Effects
-    	<form>
-    		<input type="radio" name="transition" id="transitions-on" checked>ON<br>
-    		<input type="radio" name="transition" id="transitions-off">OFF
-    	</form>
-    </section>
-  </label>
+	  	<section id="transition-radios">
+	    	Effects
+	    	<form>
+	    		<input type="radio" name="transition" id="transitions-on" checked>ON<br>
+	    		<input type="radio" name="transition" id="transitions-off">OFF
+	    	</form>
+	    </section>
+			<br>
+			<section id="fps-radios">
+				Frames per Second
+				<form>
+					<input type="radio" name="fps" id="30">30<br>
+					<input type="radio" name="fps" id="60" checked>60
+				</form>
+			</section>
+	  </label>
     <h1>Centipede... IN SPACE!</h1>
     <label id="score" class="score">
       Score
@@ -42,7 +50,7 @@
       <section class="level"></section>
     </label>
     <label class="how-to-play-link">
-      <a href="#">For How To Play, Click Here</a>
+      <a href="#">HELP</a>
     </label>
     <section id="score-flash"></section>
     <button class="pause clicked">Click to START</button>
@@ -53,23 +61,26 @@
   		<ul>
   			<li>Press SPACE to shoot</li>
   			<li>Use the ARROW KEYS to move</li>
-  			<li><img src="assets/centipede_body.gif"> <img src="assets/centipede_head.gif"> 
+  			<li><img src="assets/centipede_body.gif" alt="Centipede body"> <img src="assets/centipede_head.gif" alt="Centipede head">
   				are your targets; eliminate all to clear the level</li>
   			<li>Destroy them before they get to you!</li>
-  			<li><img src="assets/centipede_head.gif"> are worth more points</li>
+  			<li><img src="assets/centipede_head.gif" alt="Centipede head"> are worth more points</li>
   			<li>You will get more points as the game level increases</li>
-  			<li><img src="assets/full_mushroom.gif"> take four hits to destroy, but 
+  			<li><img src="assets/full_mushroom.gif" alt="Asteroid"> take four hits to destroy, but
   				can block enemy paths</li>
-  			<li><img src="assets/spider.gif"> eat <img src="assets/full_mushroom.gif">, 
+  			<li><img src="assets/spider.gif" alt="Spider"> eat <img src="assets/full_mushroom.gif" alt="Asteroid">,
   				but can destroy you; worth a LOT of points!</li>
-  			<li><img src="assets/flea.gif"> create more <img src="assets/full_mushroom.gif">,
-  				but can destroy you; worth a LOT of points!</li>  		
+  			<li><img src="assets/flea.gif" alt="Flea"> create more <img src="assets/full_mushroom.gif" alt="Asteroid">,
+  				but can destroy you; worth a LOT of points!</li>
   		</ul>
   		<h2>TROUBLESHOOTING</h2>
 			<ul>
+				<li>Q: I can't see the whole screen...</li>
+				<li>A: Try zooming out in your browser's settings</li>
+				<br>
 				<li>Q: The game is really slow...</li>
-				<li>A: Try turning "Effects" off, in the options box on the lower right of 
-					the page</li>
+				<li>A: Try turning "Effects" off, in the options box on the lower right of
+					the page. If that doesn't help, try also setting the frames per second to 30</li>
 				<br>
 				<li>Q: The controls are not responsive...</li>
 				<li>A: Try reloading the page, or try opening the page in Chrome or Firefox</li>
@@ -97,8 +108,7 @@
 
     <script type="text/javascript">
       (function () {
-      	window.options = {runTransitions: true};
-      	window.frameRateMod = 2; //default to 60 fps
+      	window.options = {runTransitions: true, frameRateMod: 2};
         var canvasEl = $("canvas")[0];
         canvasEl.width = Centipede.Game.DIM_X;
         canvasEl.height = Centipede.Game.DIM_Y;

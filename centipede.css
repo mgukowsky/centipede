@@ -96,13 +96,14 @@ label.options {
 	background-color: #FFF;
 	top: 520px;
 	right: 0px;
-	height: 75px;
+	height: 220px;
 	text-align: left;
 }
 
 label.how-to-play-link > a {
 	color: #CC0;
 	text-decoration: none;
+  font-size: 40px;
 }
 
 label.how-to-play-link > a:hover {
@@ -120,6 +121,10 @@ label.how-to-play-link > a:hover {
 	font-size: 20px;
 	opacity: 0;
 	transition: top 500ms, opacity 500ms;
+}
+
+button, input {
+  cursor: pointer;
 }
 
 button.pause {
