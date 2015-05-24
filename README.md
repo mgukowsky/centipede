@@ -1,4 +1,4 @@
-# Centipede
+# Centipede | [Live Link](http://mgukowsky.github.io/centipede/)
 
 ## Summary
 A clone of Centipede, based in space. Players attempt to destroy waves of centipedes
